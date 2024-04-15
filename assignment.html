@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Personal Profile Card</title>
+  <style>
+    .main-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f2f2f2;
+
+    }
+
+    .card {
+      width: 400px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+
+    }
+
+    .card-header {
+      width: 100%;
+      background-image: url('https://www.w3schools.com/howto/img_avatar.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .card-body {
+      padding: 20px;
+      text-align: center;
+
+    }
+    .following-followers {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+
+    }
+    .projects {
+      flex: 1;
+      border-right: 1px solid #ccc;
+      padding-right: 20px;
+
+    }
+    .following {
+      flex: 1;
+      border-right: 1px solid #ccc;
+      padding: 0 20px;
+
+    }
+    .followers {
+      flex: 1;
+      padding-left: 20px;
+
+    }
+    .contacts {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+
+    }
+    .follow-me {
+      flex: 1;
+      padding-right: 10px;
+
+    }
+    .hire-me {
+      flex: 1;
+      padding-left: 10px;
+
+    }
+    .follow-me button, .hire-me button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+
+    }
+  </style>
+
+</head>
+
+<body id="body">
+
+  <div class="main-wrapper">
+    <div class="card">
+      <div class="card-header">
+        <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
+      </div>
+      <div class="card-body">
+        <h1>Md. Siduzzaman Sagor</h1>
+        <h3>Web Developer</h3>
+        <p class="description">I am professional WordPress and Laravel Developer. I am working at <a
+            href="https://www.upwork.com/">Upwork</a></p>
+        <div class="following-followers">
+          <div class="projects">
+            <h4>Projects</h4>
+            <p>100</p>
+          </div>
+          <div class="following">
+            <h4>Following</h4>
+            <p>100</p>
+          </div>
+          <div class="followers">
+            <h4>Followers</h4>
+            <p>100</p>
+          </div>
+        </div>
+        <div class="contacts">
+          <div class="follow-me">
+            <button>Follow Me</button>
+          </div>
+          <div class="hire-me">
+            <button>Hire Me</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
